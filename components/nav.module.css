@@ -1,0 +1,114 @@
+.nav {
+  /* background-color: #18181b; */
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 5rem;
+  justify-content: space-between;
+  margin: 2rem 2rem 0px 2rem;
+  text-align: left;
+  z-index: 999;
+}
+
+.nav div {
+  display: flex;
+}
+
+.nav figure {
+  margin: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.nav p {
+  padding: 0 10px;
+  color: aliceblue;
+}
+
+.nav a {
+  min-width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav input {
+  height: 3.6rem;
+  width: 40rem;
+  line-height: 1.5;
+  appearance: none;
+  background-clip: padding-box;
+  transition: border 100ms ease-in, background-color 100ms ease-in;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hsla(0, 0%, 100%, 0.2);
+  color: #efeff1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 0.6rem 0px 0px 0.6rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+}
+
+.nav input::placeholder {
+  color: #c2c2c3;
+}
+
+.nav input:hover {
+  outline: none;
+  border-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.nav input:focus {
+  outline: none;
+  border-color: #a970ff;
+  background-color: #000;
+}
+
+.search {
+  background-color: hsla(0, 0%, 100%, 0.15);
+  color: #efeff1;
+  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
+}
+
+.session {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.session button {
+  color: #efeff1;
+  padding: 0 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  user-select: none;
+  font-weight: 600;
+  border-radius: 0.4rem;
+  height: 3rem;
+}
+
+.session button:hover {
+  cursor: pointer;
+}
+
+.login {
+  /* background-color: hsla(0, 0%, 100%, 0.15); */
+}
+
+.register {
+  /* background-color: #9147ff; */
+}
+
+.user {
+  /* background-color: none; */
+}
+.user:is(:focus, :hover) {
+  /* background-color: hsla(0, 0%, 100%, 0.2); */
+}

@@ -1,0 +1,53 @@
+.card {
+  min-width: 256px;
+  height: 256px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.image_container {
+  position: relative;
+  width: 256px;
+  height: 144px;
+}
+
+.metadata {
+  padding: 1rem;
+  color: var(--color-brand-accent-moon);
+  background-color: var(--color-background-base);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin: 0;
+  position: relative;
+  height: 5rem;
+  min-width: 5rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile_description {
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.profile p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--color-text-alt-2) !important;
+}
+.game {
+  color: var(--color-text-alt-2) !important;
+}

@@ -23,7 +23,6 @@ const COLORS = [
 
 export function randomColor() {
   const index = Math.floor(Math.random() * (COLORS.length - 0) + 0)
-  console.log('--INDEX: ', index)
   return COLORS[index]
 }
 

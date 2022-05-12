@@ -5,10 +5,8 @@ import TwitchEmbed from '../../components/twitchEmbed'
 import styles from './channels.module.css'
 
 export default function ChannelEmbed({ parent }) {
-  console.log('PARENT', parent)
   const router = useRouter()
   const { cid } = router.query
-  console.log('CID: ', cid)
 
   return (
     <div className={styles.channel}>

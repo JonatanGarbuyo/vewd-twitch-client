@@ -23,6 +23,10 @@
   max-width: 95%;
 }
 
+.recomended span {
+  color: var(--color-cyan-13);
+}
+
 .card:hover,
 .card:focus,
 .card:active {

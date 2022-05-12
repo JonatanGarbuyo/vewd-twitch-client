@@ -1,11 +1,13 @@
 .card {
-  min-height: 23rem;
-  /* border-radius: 0.5rem;
-  overflow: hidden; */
+  min-height: 26rem;
+  min-width: 149px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  /* height: 261px; */
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .image_wrapper {
@@ -25,7 +27,7 @@
 .image_wrapper:focus-visible .left_border {
   position: absolute;
   bottom: 0;
-  height: 144px;
+  height: 192px;
   width: 0.5rem;
 }
 .image_wrapper:focus-visible .bottom_border {
@@ -50,17 +52,16 @@
   width: 261px;
   height: 149px; */
 }
-
 .image_container {
   margin: auto;
   position: relative;
-  width: 256px;
-  height: 144px;
+  width: 144px;
+  height: 192px;
 }
 
 .metadata {
   margin: 0 5px;
-  width: 256px;
+  width: 144px;
   padding: 1rem;
   color: var(--color-brand-accent-moon);
   /* background-color: var(--color-background-base); */

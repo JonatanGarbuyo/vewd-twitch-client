@@ -2,6 +2,7 @@ import Head from 'next/head'
 import CategoryCard from '../components/categoryCard'
 
 import ChannelCard from '../components/channelCard'
+import DirectoryNav from '../components/directoryNav'
 import Nav from '../components/nav'
 import Xmb from '../components/xmb'
 import useTwitch from '../hooks/useTwitch'
@@ -45,15 +46,7 @@ export default function Home({ topGames }) {
 
           <Xmb data={topGames} Card={CategoryCard} />
 
-          <div className={styles.recomended}>
-            <div>
-              <div>Games Games Icon</div>
-              <div>IRL IRL Icon</div>
-              <div>Music Music Icon</div>
-              <div>Esports Esports Icon</div>
-              <div>Creative Creative Icon</div>
-            </div>
-          </div>
+          <DirectoryNav />
 
           <div className={styles.recomended}>
             <div>

@@ -3,8 +3,6 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { randomColor } from '../../helper'
 
-import placeholderImg from '../../public/images/placeholder.png'
-
 import styles from './channelCard.module.css'
 import SkeletonChannelCard from './SkeletonChannelCard'
 
@@ -18,7 +16,9 @@ export default function ChannelCard({ item: stream }) {
 
   return (
     <>
-      {stream.thumbnail_url ? (
+      {!stream.thumbnail_url ? (
+        <SkeletonChannelCard />
+      ) : (
         <div className={styles.card}>
           <Link href={`/channel/${stream.user_login}`}>
             <a className={styles.image_wrapper}>
@@ -83,8 +83,6 @@ export default function ChannelCard({ item: stream }) {
             </div>
           </div>
         </div>
-      ) : (
-        <SkeletonChannelCard />
       )}
     </>
   )

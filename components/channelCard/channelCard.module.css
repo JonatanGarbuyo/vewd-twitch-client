@@ -100,3 +100,24 @@
 .game {
   color: var(--color-text-alt-2) !important;
 }
+
+.image_placeholder {
+  height: 100%;
+  background-color: #7d34e9;
+}
+.title_placeholder {
+  background-color: #7d34e9;
+  border-radius: 0.3rem;
+  border: 1px transparent;
+  height: 1rem;
+  margin: 0.7rem 0;
+  width: 15rem;
+}
+.name_placeholder {
+  background-color: #7d34e9;
+  border-radius: 0.3rem;
+  border: 1px transparent;
+  height: 1rem;
+  margin: 0.7rem 0;
+  width: 10rem;
+}

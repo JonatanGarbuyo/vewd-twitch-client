@@ -18,12 +18,7 @@ export default function Home({ topGames }) {
     <>
       <Head>
         <title>Vewd Twitch client</title>
-        <meta
-          name="Vewd Twitch client"
-          content="A Twitch client for smart TVs with Vewd systems"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="maximum-scale=1"></meta>
+        <meta name="viewport" content="maximum-scale=5 width=1280"></meta>
       </Head>
 
       <Nav />

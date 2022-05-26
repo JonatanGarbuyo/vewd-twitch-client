@@ -67,7 +67,7 @@ export default function ChannelCard({ item: stream }) {
                 <Image
                   src={stream.thumbnail_url.replace(
                     '{width}x{height}',
-                    '30x30',
+                    '50x50',
                   )}
                   alt={`${stream.user_name} avatar`}
                   layout="fill"

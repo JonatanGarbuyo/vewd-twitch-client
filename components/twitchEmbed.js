@@ -1,6 +1,10 @@
 import styles from './twitchEmbed.module.css'
 
-export default function TwitchEmbed({ channel, parent, autoplay = true }) {
+export default function TwitchEmbed({
+  channel,
+  parent = 'localhost',
+  autoplay = true,
+}) {
   return (
     <>
       <div id="twitch-embed" className={styles.embed}>

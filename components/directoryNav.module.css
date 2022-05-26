@@ -1,8 +1,8 @@
 .container {
+  margin: 1rem 0;
   width: 100%;
   text-align: left;
   font-weight: var(--font-weight-bolder);
-  width: 100%;
   display: flex;
   justify-content: center;
   font-size: 1.8rem;

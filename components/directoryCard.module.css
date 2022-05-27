@@ -1,0 +1,34 @@
+.container {
+  margin: 2rem 0;
+  width: 100%;
+  text-align: left;
+  font-weight: var(--font-weight-bolder);
+  /* display: flex;
+  justify-content: center; */
+  font-size: 1.8rem;
+}
+
+.container a {
+  border-radius: var(--border-radius-large);
+}
+
+.category {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid transparent;
+  border-radius: 0.6rem;
+  padding: 2px;
+  height: 4.5rem;
+  color: var(--color-twitch-purple-5);
+  color: var(--color-brand-accent-moon);
+  color: var(--color-twitch-purple-6);
+  background-color: #19e46a;
+}
+
+.category p {
+  margin: auto;
+}

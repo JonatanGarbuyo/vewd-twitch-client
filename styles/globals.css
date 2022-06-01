@@ -36,6 +36,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 button {

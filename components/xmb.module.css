@@ -9,7 +9,10 @@
   margin: auto;
   overflow-x: auto;
 }
+
 .row {
   display: flex;
   gap: 1.5rem;
+  margin: 0;
+  padding: 0;
 }

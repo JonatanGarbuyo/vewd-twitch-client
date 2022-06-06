@@ -10,12 +10,12 @@ export default function CategoryHeader({ category }) {
           <div className={styles.image_wrapper}>
             <Image
               alt="category art"
-              src={category.box_art_url.replace('52x72', '144x192')}
+              src={category?.box_art_url.replace('52x72', '144x192')}
               layout="fill"
             />
           </div>
           <div>
-            <h1>{category.name}</h1>
+            <h1>{category?.name}</h1>
           </div>
         </div>
       </div>

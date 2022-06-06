@@ -9,9 +9,10 @@ export default function CategoryStreams({ categoryId }) {
   const [streams, setStreams] = useState([])
 
   useEffect(() => {
-    fetch(`/api/streams?categoryId=${categoryId}`)
-      .then((data) => data.json())
-      .then(({ data }) => setStreams(data))
+    if (categoryId)
+      fetch(`/api/streams?categoryId=${categoryId}`)
+        .then((data) => data.json())
+        .then(({ data }) => setStreams(data))
   }, [categoryId])
 
   return (

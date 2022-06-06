@@ -17,7 +17,7 @@ export default function Category({ category }) {
       <Nav />
       <div>
         <CategoryHeader category={category} />
-        <CategoryStreams categoryId={category.id} />
+        <CategoryStreams categoryId={category?.id} />
       </div>
     </>
   )
@@ -34,10 +34,10 @@ export async function getStaticPaths() {
   }
 }
 
-export async function getStaticProps(context) {
-  const { categoryName } = context.params
-  const { data } = await getCategory(categoryName)
+export async function getStaticProps({ params }) {
+  const { categoryName } = params
+  const [category] = await getCategory(categoryName)
   return {
-    props: { category: data[0] },
+    props: { category: category },
   }
 }

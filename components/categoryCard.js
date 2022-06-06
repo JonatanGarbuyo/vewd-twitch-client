@@ -14,7 +14,7 @@ export default function CategoryCard({ item: category }) {
 
   return (
     <div className={styles.card}>
-      <Link href={`/category/${category.id}`}>
+      <Link href={`/category/${category.name}`}>
         <a className={styles.image_wrapper}>
           <div
             className={styles.left_border_top}

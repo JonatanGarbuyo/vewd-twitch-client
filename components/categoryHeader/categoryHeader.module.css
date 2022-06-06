@@ -1,0 +1,25 @@
+.category_header_banner {
+  width: 100%;
+  max-width: 95%;
+  height: 20rem;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.image_wrapper {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  margin: 0 3rem;
+  /* outline: unset; */
+}
+
+.category_art_placeholder {
+  width: 144px;
+  height: 192px;
+  background-color: grey;
+}

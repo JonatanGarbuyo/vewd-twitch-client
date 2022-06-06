@@ -1,14 +1,14 @@
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+
+import SkeletonChannelCard from './SkeletonChannelCard'
 import { randomColor } from '../../helper'
 
 import styles from './channelCard.module.css'
-import SkeletonChannelCard from './SkeletonChannelCard'
 
 export default function ChannelCard({ item: stream }) {
   const [color, setColor] = useState('')
-  const [streamer, setStreamer] = useState(null)
 
   useEffect(() => {
     setColor(randomColor())
@@ -67,7 +67,7 @@ export default function ChannelCard({ item: stream }) {
                 <Image
                   src={stream.thumbnail_url.replace(
                     '{width}x{height}',
-                    '30x30',
+                    '50x50',
                   )}
                   alt={`${stream.user_name} avatar`}
                   layout="fill"

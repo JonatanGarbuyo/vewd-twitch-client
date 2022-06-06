@@ -2,7 +2,7 @@ import Head from 'next/head'
 import CategoryCard from '../components/categoryCard'
 
 import ChannelCard from '../components/channelCard'
-import DirectoryNav from '../components/directoryNav'
+import DirectoryCard from '../components/directoryCard'
 import Nav from '../components/nav'
 import Xmb from '../components/xmb'
 import useTwitch from '../hooks/useTwitch'
@@ -12,18 +12,13 @@ import getTopGames from '../lib/api/getTopGames'
 import styles from '../styles/Home.module.css'
 
 export default function Home({ topGames }) {
-  const { streams } = useTwitch()
+  const { streams, directories } = useTwitch()
 
   return (
     <>
       <Head>
         <title>Vewd Twitch client</title>
-        <meta
-          name="Vewd Twitch client"
-          content="A Twitch client for smart TVs with Vewd systems"
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="maximum-scale=1"></meta>
+        <meta name="viewport" content="maximum-scale=5 width=1280"></meta>
       </Head>
 
       <Nav />
@@ -43,10 +38,9 @@ export default function Home({ topGames }) {
               </p>
             </div>
           </div>
-
           <Xmb data={topGames} Card={CategoryCard} />
 
-          <DirectoryNav />
+          <Xmb data={directories} Card={DirectoryCard} />
 
           <div className={styles.recomended}>
             <div>

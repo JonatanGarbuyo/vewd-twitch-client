@@ -1,22 +1,14 @@
 .container {
-  margin: 1rem 0;
+  margin: 2rem 0;
   width: 100%;
   text-align: left;
   font-weight: var(--font-weight-bolder);
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   font-size: 1.8rem;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 95%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
-.wrapper a {
+.container a {
   border-radius: var(--border-radius-large);
 }
 

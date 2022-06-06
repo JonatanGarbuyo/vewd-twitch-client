@@ -18,11 +18,12 @@
   font-size: 1.8rem;
 }
 .recomended div {
-  display: flex;
-  width: 100%;
-  max-width: 95%;
+  width: 95%;
 }
 
+.recomended p {
+  margin: 1rem 0;
+}
 .recomended span {
   color: var(--color-cyan-13);
 }
